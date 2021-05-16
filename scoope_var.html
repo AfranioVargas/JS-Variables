@@ -1,0 +1,32 @@
+<!--
+    #SCOPO
+        Escopo determina a visibilidade de alhuma variável no JS
+
+    # BLOCK STATEMENT
+
+     {     //Iniciamos o bloco
+          // Dentro podemos colocar qualquer código. O bloco também criará um novo escopo. Chamams de `block-scoped`
+     }     //Fechamos o bloco 
+    
+-->
+
+
+<script>
+   {
+       let x = 0
+       console.log(x)
+   } 
+</script>  
+    
+<!--
+# var
+    // var é global e poderá funcionar fora de um escopo de bloco
+    // var tem o conceito hoisting (significa elevação. O JS eleva o var e executa)
+-->
+<script>
+    console.log('> existe x antes do bloco? ', x) 
+    {
+        var x = 0
+        console.log('> existe x depois do bloco? ', x)
+    }  
+</script>
